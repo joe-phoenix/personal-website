@@ -1,0 +1,165 @@
+:root {
+  --bg: #0a192f;
+  --text: #ccd6f6;
+  --muted: #8892b0;
+  --accent: #64ffda;
+  --border: #233554;
+  --tag-bg: #112240;
+  --max-width: 680px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px 60px;
+}
+
+.intro h1 {
+  font-size: 1.75rem;
+  margin: 0 0 4px;
+  font-weight: 600;
+  color: #e6f1ff;
+}
+
+.tagline {
+  color: var(--muted);
+  margin: 0 0 20px;
+  font-size: 1rem;
+}
+
+.bio {
+  margin: 0 0 24px;
+  max-width: 56ch;
+}
+
+.bio a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.bio a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+}
+
+.links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+main {
+  margin-top: 56px;
+}
+
+h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+.project {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+}
+
+.project:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.project h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e6f1ff;
+}
+
+.project .year {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.project p {
+  margin: 0 0 12px;
+  color: var(--text);
+  max-width: 60ch;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tags span {
+  background: var(--tag-bg);
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.project-link {
+  color: var(--accent);
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-link:hover {
+  border-bottom-color: var(--accent);
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 48px 20px 40px;
+  }
+}
