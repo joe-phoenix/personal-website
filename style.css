@@ -104,6 +104,30 @@ h2 {
   margin: 0 0 24px;
 }
 
+#companies {
+  margin-top: 56px;
+}
+
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px 40px;
+}
+
+.logo {
+  height: 44px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
 .project {
   padding: 24px 0;
   border-top: 1px solid var(--border);
