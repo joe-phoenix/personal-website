@@ -26,6 +26,15 @@ body {
   padding: 80px 24px 60px;
 }
 
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid var(--border);
+}
+
 .intro h1 {
   font-size: 1.75rem;
   margin: 0 0 4px;
